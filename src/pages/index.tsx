@@ -81,7 +81,7 @@ export default function Home(): ReactNode {
 
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title} 공식 문서 및 도움말`}
       description="실시간 협업 코드 에디터 CodeJam"
     >
       <HomepageHeader />

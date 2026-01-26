@@ -44,7 +44,11 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           routeBasePath: 'docs',
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          blogSidebarTitle: '모든 게시물',
+          blogSidebarCount: 'ALL',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -70,6 +74,7 @@ const config: Config = {
           position: 'left',
           label: '도움말',
         },
+        { to: '/blog', label: '블로그', position: 'left' },
         // 2. 만든 사람
         { to: '/team', label: '만든 사람', position: 'left' },
         // 3. 버그 리포트 (외부 링크)
