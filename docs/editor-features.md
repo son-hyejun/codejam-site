@@ -16,22 +16,6 @@ CodeJam 워크스페이스 상단과 좌측에는 협업을 돕는 다양한 도
 
 팀원을 방으로 초대하는 방법입니다.
 
-### 룸 코드 (Room Code)
-
-파일 패널 상단의 **+** 버튼을 클릭하여 새 파일을 생성합니다.
-
-**지원 확장자:**
-
-- `.js` - JavaScript
-- `.py` - Python
-- `.c`, `.cpp` - C/C++
-- `.java` - Java
-- `.ts` - TypeScript
-- `.html` - HTML
-- `.css` - CSS
-
-![새 파일 생성](./img/editor-features/new-file.png)
-
 ![공유 링크 모달](./img/editor-features/share-modal.png)
 
 ---
