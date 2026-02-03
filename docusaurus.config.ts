@@ -36,6 +36,11 @@ const config: Config = {
     locales: ['ko'],
   },
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+
   presets: [
     [
       'classic',
@@ -56,6 +61,18 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'api',
+        path: 'api',
+        routeBasePath: 'api',
+        sidebarPath: './sidebars-api.ts',
+      },
+    ],
+  ],
+
   themeConfig: {
     image: 'img/codejam-social-card.png',
     colorMode: {
@@ -72,7 +89,14 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '도움말',
+          label: '가이드',
+        },
+        {
+          type: 'doc',
+          docId: 'overview',
+          docsPluginId: 'api',
+          position: 'left',
+          label: 'API 명세',
         },
         { to: '/blog', label: '블로그', position: 'left' },
         // 2. 만든 사람
